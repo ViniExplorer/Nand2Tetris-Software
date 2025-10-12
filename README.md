@@ -1,5 +1,8 @@
-# Nand2Tetris-Software
-These are my solutions for projects 6-12 of the Nand2Tetris course.
+# Vini's Nand2Tetris Software Solutions
+These are my solutions for projects 6-12 of the Nand2Tetris course, the software section.  
+
+This spans a full Jack (a Java like language from this course) compiler, and the OS libraries 
+for the Hack computer.
 
 The projects are organised as such: 
 - **6**: Assembler -> translate Hack Assembly code into binary instructions.
