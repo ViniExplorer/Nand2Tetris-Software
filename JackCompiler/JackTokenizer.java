@@ -92,6 +92,14 @@ public class JackTokenizer {
         }
     }
 
+    public void close() {
+        try {
+            fileReader.close();
+        } catch (IOException e) {
+            throw new RuntimeException("Error: could not close file!");
+        }
+    }
+
     public boolean hasMoreTokens() {
         skipToNextToken();
         return isOpen;
@@ -197,7 +205,7 @@ public class JackTokenizer {
 
             if ((charCode = fileReader.read()) != -1) {
                 currentChar = (char) charCode;
-                System.out.println(currentChar);
+                // DEBUG: System.out.println(currentChar);
                 return true;
             } else {
                 fileReader.close();
